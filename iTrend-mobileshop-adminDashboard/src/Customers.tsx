@@ -1,8 +1,20 @@
-// src/Dashboard.tsx
-import React from 'react';
+import React, { useState } from "react";
 
-function Dashboard() {
-  return <h1>cssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssus Page</h1>;
-}
 
-export default Dashboard;
+const Customers = () => {
+  
+
+  return (
+    <main className='main-container'>
+            <div className='main-title'>
+                <h3>CUSTOMERSSS</h3>
+            </div>
+    
+            <div className='main-cards'>
+                
+            </div>
+        </main>
+  );
+};
+
+export default Customers;

@@ -119,6 +119,14 @@ function Sidebar({ openSidebarToggle, OpenSidebar }: SidebarProps) {
         </li>
         <li className="sidebar-list-item">
           {/* <a href="">
+            <BsPeopleFill className="icon" /> Customers
+          </a> */}
+          <Link to="/customers">
+            <BsPeopleFill className="icon" /> Customers
+          </Link>
+        </li>
+        <li className="sidebar-list-item">
+          {/* <a href="">
             <BsFillArchiveFill className="icon" /> Products
           </a> */}
           <Link to="/products">
@@ -130,15 +138,7 @@ function Sidebar({ openSidebarToggle, OpenSidebar }: SidebarProps) {
             <BsFillGrid3X3GapFill className="icon" /> Categories
           </a> */}
           <Link to="/categories">
-            <BsFillGrid3X3GapFill className="icon" /> Categories
-          </Link>
-        </li>
-        <li className="sidebar-list-item">
-          {/* <a href="">
-            <BsPeopleFill className="icon" /> Customers
-          </a> */}
-          <Link to="/customers">
-            <BsPeopleFill className="icon" /> Customers
+            <BsFillGrid3X3GapFill className="icon" /> Orders
           </Link>
         </li>
         <li className="sidebar-list-item">

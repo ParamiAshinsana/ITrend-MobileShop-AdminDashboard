@@ -36,6 +36,7 @@ import Reports from './Reports';
 import Settings from './Settings';
 import Home from './Home';
 import CustomerOperations from './CustomerOperations';
+import AddCustomer from './AddCutomer';
 
 function App() {
   const [openSidebarToggle, setOpenSidebarToggle] = useState(false);
@@ -68,6 +69,7 @@ function App() {
             <Route path="/inventory" element={<Inventory />} />
             <Route path="/reports" element={<Reports />} />
             <Route path="/settings" element={<Settings />} />
+            <Route path="/addcustomer" element={<AddCustomer />} />
           </Routes>
         </main>
       </div>

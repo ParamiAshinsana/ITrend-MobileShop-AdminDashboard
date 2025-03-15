@@ -129,7 +129,7 @@ function Sidebar({ openSidebarToggle, OpenSidebar }: SidebarProps) {
           {/* <a href="">
             <BsFillArchiveFill className="icon" /> Products
           </a> */}
-          <Link to="/products">
+          <Link to="/addcustomer">
             <BsFillArchiveFill className="icon" /> Products
           </Link>
         </li>

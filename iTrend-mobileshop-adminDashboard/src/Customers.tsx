@@ -60,6 +60,7 @@
 
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
 import "./Customers.css";
 
 interface Customer {
@@ -86,7 +87,12 @@ const Customers: React.FC<CustomersProps> = ({ openPopup }) => {
     <div className="customers-container">
       <div className="header">
         <h3>Customers</h3>
-        <button className="add-button" onClick={openPopup}>Add Customer</button>
+        {/* <button className="add-button">Add Customer</button> */}
+        <Link to="/addcustomer">
+            <button type="button" className="add-button btn btn-primary w-100"> 
+              Add Customer
+            </button>
+        </Link>
       </div>
 
       <table className="customer-table">

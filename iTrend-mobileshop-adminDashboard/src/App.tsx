@@ -36,8 +36,9 @@ import Reports from './Reports';
 import Settings from './Settings';
 import Home from './Home';
 import CustomerOperations from './CustomerOperations';
-import AddCustomer from './AddCutomer';
+import AddCustomer from './AddCustomer';
 import Items from './Items';
+import AddItem from './AddItem';
 
 function App() {
   const [openSidebarToggle, setOpenSidebarToggle] = useState(false);
@@ -72,6 +73,7 @@ function App() {
             <Route path="/settings" element={<Settings />} />
             <Route path="/addcustomer" element={<AddCustomer />} />
             <Route path="/items" element={<Items />} />
+            <Route path="/additem" element={<AddItem />} />
           </Routes>
         </main>
       </div>

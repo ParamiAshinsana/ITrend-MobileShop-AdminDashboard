@@ -84,8 +84,8 @@ const Customers: React.FC<CustomersProps> = ({ openPopup }) => {
   }, []);
 
   return (
-    <div className="customers-container">
-      <div className="header">
+    <div className="customers-containery">
+      <div className="headerr">
         <h3>Customers</h3>
         {/* <button className="add-button">Add Customer</button> */}
         <Link to="/addcustomer">

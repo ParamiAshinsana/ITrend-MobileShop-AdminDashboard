@@ -28,6 +28,7 @@ body {
 }
 
 .grid-container {
+  border: 5px solid #d50000; 
   display: grid;
   grid-template-columns: 260px 1fr 1fr 1fr;
   grid-template-rows: 0.2fr 3fr;
@@ -37,8 +38,11 @@ body {
   height: 100vh;
 }
 
+
+
 /* Header  */
 .header {
+  border: 5px solid #34fb65; 
   grid-area: header;
   height: 60px;
   display: flex;
@@ -55,12 +59,14 @@ body {
 
 /* Sidebar  */
 #sidebar {
+  border: 5px solid #2216c9; 
   grid-area: sidebar;
   height: 100%;
   background-color: #263043;
   overflow-y: auto;
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
+  
 }
 
 .sidebar-title {
@@ -117,6 +123,7 @@ body {
 
 /* Main  */  
 .main-container {
+  border: 5px solid #00490c; 
   grid-area: main;
   overflow-y: auto;
   padding: 20px 20px;
@@ -124,6 +131,7 @@ body {
 }
 
 .main-title {
+  border: 5px solid #a9d217; 
   display: flex;
   justify-content: space-between;
 }

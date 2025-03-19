@@ -1,5 +1,5 @@
 /* Container */
-.customers-container {
+.customers-containery {
     width: 260%;
     margin-left: 20px;
     /* margin: 20px auto; */
@@ -7,17 +7,19 @@
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border: 5px solid #035d80;
+    
   }
   
   /* Header */
-  .header {
+  .headerr {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
   }
   
-  .header h3 {
+  .headerr h3 {
     color: #333;
     font-size: 22px;
   }

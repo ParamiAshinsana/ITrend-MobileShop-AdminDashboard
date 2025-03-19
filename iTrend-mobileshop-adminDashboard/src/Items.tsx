@@ -36,68 +36,55 @@ useEffect(() => {
   
 
   return (
-    <div className="customers-container">
-      <div className="header">
+    <div className="items-containerd">
+      <div className="headerr">
         <h3>Items</h3>
-        <Link to="/addItems">
+        <Link to="/additem">
           <button type="button" className="add-button btn btn-primary w-100">
             Add Items
           </button>
         </Link>
       </div>
 
-      <table className="customer-table">
-        <thead>
-          <tr>
-            <th>#</th>
-            <th>Type</th>
-            <th>Brand</th>
-            <th>Model</th>
-            <th>Description</th>
-            <th>Color</th>
-            <th>Price</th>
-            <th>Quantity</th>
-            <th>Status</th>
-          </tr>
-        </thead>
-        {/* <tbody>
-          {items.map((item, index) => (
-            <tr key={item.id}>
-              <td>{index + 1}</td>
-              <td>{item.type}</td>
-              <td>{item.brand}</td>
-              <td>{item.model}</td>
-              <td>{item.description}</td>
-              <td>{item.color}</td>
-              <td>{item.price}</td>
-              <td>{item.stockQuantity}</td>
-              <td>{item.status}</td>
-            </tr>
-          ))}
-        </tbody> */}
+                    <div className="tabler-containerq">
+                <table className="item-tablee">
+                    <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Type</th>
+                        <th>Brand</th>
+                        <th>Model</th>
+                        <th>Description</th>
+                        <th>Color</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Status</th>
+                    </tr>
+                    </thead>
                     <tbody>
-            {Array.isArray(items) ? (
-                items.map((item, index) => (
-                <tr key={item.id}>
-                    <td>{index + 1}</td>
-                    <td>{item.type}</td>
-                    <td>{item.brand}</td>
-                    <td>{item.model}</td>
-                    <td>{item.description}</td>
-                    <td>{item.color}</td>
-                    <td>{item.price}</td>
-                    <td>{item.stockQuantity}</td>
-                    <td>{item.status}</td>
-                </tr>
-                ))
-            ) : (
-                <tr>
-                <td colSpan={9}>No items available</td>
-                </tr>
-            )}
-            </tbody>
+                    {Array.isArray(items) ? (
+                        items.map((item, index) => (
+                        <tr key={item.id}>
+                            <td>{index + 1}</td>
+                            <td>{item.type}</td>
+                            <td>{item.brand}</td>
+                            <td>{item.model}</td>
+                            <td>{item.description}</td>
+                            <td>{item.color}</td>
+                            <td>{item.price}</td>
+                            <td>{item.stockQuantity}</td>
+                            <td>{item.status}</td>
+                        </tr>
+                        ))
+                    ) : (
+                        <tr>
+                        <td colSpan={9}>No items available</td>
+                        </tr>
+                    )}
+                    </tbody>
+                </table>
+                </div>
 
-      </table>
     </div>
   );
 };

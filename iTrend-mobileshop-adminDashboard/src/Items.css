@@ -1,15 +1,12 @@
-/* Container */
-.customers-container {
+/* .customers-container {
     width: 260%;
     margin-left: 20px;
-    /* margin: 20px auto; */
     background: #fff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   }
   
-  /* Header */
   .header {
     display: flex;
     justify-content: space-between;
@@ -22,7 +19,6 @@
     font-size: 22px;
   }
   
-  /* Add Customer Button */
   .add-button {
     background-color: #007bff;
     color: white;
@@ -38,7 +34,7 @@
     background-color: #0056b3;
   }
   
-  /* Table */
+
   .customer-table {
     width: 100%;
     border-collapse: collapse;
@@ -46,8 +42,7 @@
     border-radius: 10px;
     overflow: hidden;
   }
-  
-  /* Table Header */
+
   .customer-table thead {
     background: #007bff;
     color: white;
@@ -60,13 +55,123 @@
     border-bottom: 1px solid #ddd;
   }
   
-  /* Table Row Hover Effect */
+
   .customer-table tbody tr:hover {
     background: #f1f1f1;
   }
   
-  /* Alternate Row Colors */
+
   .customer-table tbody tr:nth-child(even) {
     background: #f9f9f9;
   }
+
+  .table-container {
+    width: 100%;
+    overflow-x: auto; 
+  }
   
+  .customer-table {
+    width: max-content;
+    min-width: 100%;
+    border-collapse: collapse;
+  }
+  
+   */
+
+
+
+   /* Container */
+.items-containerd {
+    width: 100%; /* Ensures it fits within the viewport */
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Prevents unnecessary scrolling */
+}
+
+/* Header */
+.headerr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header h3 {
+    color: #333;
+    font-size: 22px;
+}
+
+/* Add Item Button */
+.add-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.add-button:hover {
+    background-color: #0056b3;
+}
+
+/* Table Wrapper for Horizontal Scroll */
+.tabler-containerq {
+    width: 100%;
+    overflow-x: auto; /* Enables horizontal scrolling */
+    padding-bottom: 10px; /* Prevents cut-off at the bottom */
+}
+
+/* Table */
+.item-tablee {
+    width: max-content; /* Expands as needed */
+    min-width: 100%; /* Ensures it doesn’t shrink too much */
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Table Header */
+.item-tablee thead {
+    background: #007bff;
+    color: white;
+}
+
+.item-tablee th,
+.item-tablee td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    white-space: nowrap; /* Prevents text wrapping in columns */
+    
+}
+
+/* Table Row Hover Effect */
+.item-tablee tbody tr:hover {
+    background: #f1f1f1;
+}
+
+/* Alternate Row Colors */
+.item-tablee tbody tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .headerr {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .add-button {
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+}
